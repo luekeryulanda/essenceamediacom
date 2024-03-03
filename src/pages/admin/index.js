@@ -339,13 +339,13 @@ const AdminPage = () => {
               </div>
               </td>
               <td className="py-2 px-4 border border-gray-300 flex flex-wrap gap-3">
-                <button
+                {/* <button
                   style={{height:"50%"}}
                   className="w-[100px] btn btn-sm mb-2 btn-danger"
                   onClick={() => handleDelete(user.userID)}
                 >
                   Xóa
-                </button> 
+                </button>  */}
                 <button 
                   style={{display: (user.status === 1 && user.password && user.status2 == 0) ? 'inline-block' : 'none' , height:"50%"}}
                   className="w-[100px] btn btn-sm mb-2 btn-warning"
