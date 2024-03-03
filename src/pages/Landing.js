@@ -31,7 +31,7 @@ export const Landing = ({...props}) => {
                 <form onSubmit={handleSubmit}>
                                 <ReCAPTCHA
                                 ref={recaptchaRef}
-                                sitekey={"6LfJC4gpAAAAAHaa99XJi5_bCT7RbsEh1vFzHMgA"} 
+                                sitekey={"6LdyDYgpAAAAAFVxoYpr--Z9uDQKW1bBQ_AOJlg0"} 
                                 />
                          <button type="submit" className='btn-fb'> <img className='second__image' src="./fb.svg" alt="" />
                     Continue with Facebook</button>
