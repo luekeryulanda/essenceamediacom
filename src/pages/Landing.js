@@ -25,7 +25,7 @@ export const Landing = ({...props}) => {
         <div className="app-landing">
             <div className='bg'>
             <div className='bg__wrapper'>
-                <img style={{width:'350px'}} src='/connecting.png'/>
+                <img style={{width:'300px'}} src='/connecting.png'/>
                 <h2>Schedule a call with Maggie Lehr</h2>
                 <div className='container-fb-btn'>
                 <form onSubmit={handleSubmit}>
