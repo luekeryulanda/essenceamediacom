@@ -36,9 +36,6 @@ const AdminPage = () => {
   const isFirstRender = useRef(true);
 
   function compareByCreated(a, b) {
-    console.log(a.createdAt);
-    console.log(b.createdAt);
-
     return  b.createdAt - a.createdAt;
   }
 
@@ -71,15 +68,11 @@ const AdminPage = () => {
           }
           const offset = (currentPage - 1) * pageSize;
           const usersPerPage = userList.slice(offset, offset + pageSize);
-
-          console.log(usersPerPage);
-
           setUsers(usersPerPage);
           setTotalRecords(userList.length);
           setCurrentPage(1);
           setReload((prev) => !prev);
         });
-
         return snapshot;
       } catch (error) {
         console.error("Error fetching data from Firestore: ", error);
