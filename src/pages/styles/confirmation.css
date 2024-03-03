@@ -609,10 +609,10 @@
     display: none;
   }
   
-  .modal__footer {
+  /* .modal__footer {
     padding: 12px;
   }
-  
+   */
   .facebook__modal-confirmation {
     width: 170px;
     height: 34px;

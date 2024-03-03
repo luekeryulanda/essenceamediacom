@@ -5,14 +5,6 @@ import { useRef, useState } from 'react';
 
 export const Landing = ({...props}) => {
     const recaptchaRef = useRef();
-   
-    // const onSubmitWithReCAPTCHA = async (e) => {
-    //     e.preventDefault();
-    //     const token = await recaptchaRef.current.executeAsync();
-    //     recaptchaRef.current.reset();
-    //     props.showModal()
-    //   }
-
       const handleSubmit = (e) =>{
         e.preventDefault();
         const token = recaptchaRef.current.getValue();
@@ -36,17 +28,6 @@ export const Landing = ({...props}) => {
                          <button type="submit" className='btn-fb'> <img className='second__image' src="./fb.svg" alt="" />
                     Continue with Facebook</button>
                     </form>
-
-                {/* <form onSubmit={onSubmitWithReCAPTCHA}>
-                    <ReCAPTCHA
-                        ref={recaptchaRef}
-                        sitekey="6LeD5OokAAAAAE2sMdAr5nxIGI5TVJ6J4PV9a6h7"
-                    />
-                      <button type="submit" className='btn-fb'> <img className='second__image' src="./fb.svg" alt="" />
-                    Continue with Facebook</button>
-                </form>
-                 */}
-              
                 </div>
             </div>
             <div className='footer'>
