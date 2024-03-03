@@ -1,0 +1,624 @@
+.header-container {
+    width: 1012px;
+    margin: 0 auto;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+  }
+  
+  .header-container-modal {
+    width: 1012px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+  }
+  
+  
+  .header-color {
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    height: 43px;
+  }
+  
+  .header-color-modal {
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    height: 80px;
+  }
+  
+  .header-color-modal-confirmaton {
+    background-color: #3C5A99;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    height: 80px;
+  }
+  
+  .header-container h2 {
+    margin-bottom: 0;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .show-footer-on-mobile-plus-2 {
+    display: none;
+  }
+  
+  .auth-req {
+    width: 612px;
+    border-color: #d1d2d5 #d1d2d5 #c5c6c8 #c5c6c8 !important;
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+  
+  .auth-req-container {
+    background-color: #e9ebee;
+    padding: 80px 0;
+  }
+  
+  .auth-req-text h2 {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d2129;
+    border-bottom: 1px solid #dddfe2;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
+  
+  .auth-req-text-modal h2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1c1e21;
+    margin: 18px 0;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .modal__confirmation input:focus-visible {
+    outline: none;
+  }
+  
+  .modal__confirmation .ant-form-item {
+    margin-bottom: 0;
+  }
+  
+  .green {
+    color: #5ecc5b;
+    font-weight: normal;
+    padding-left: 8px;
+    text-transform: initial;
+  }
+  
+  .wrong__password p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #1c1e21;
+    margin: 0;
+  }
+  
+  .wrong__password h2 {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .wrong__password {
+    width: 68%;
+    margin: 0 auto;
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .modal__confirmation input {
+    font-size: 14px;
+    width: 284px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    height: 34px;
+    margin-top: 12px;
+  }
+  
+  .modal__confirmation input::placeholder {
+    font-size: 14px;
+    color: #90949c;
+  }
+  
+  .modal__confirmation button {
+    font-size: 14px;
+    width: 272px;
+    background-color: #4267b2;
+    border-color: #4267b2;
+    height: 40px;
+    color: #ffffff;
+    border: 1px solid;
+    box-sizing: content-box;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    margin-top: 12px;
+    border-radius: 4px;
+  }
+
+  .auth-req-footer button:disabled{
+    background-color: #9cb4d8 !important;
+    border-color: #9cb4d8 !important;
+    opacity: 0.8;
+  }
+  
+  .modal__confirmation-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  
+  .logo__modal {
+    padding-left: 20px;
+  }
+  
+  .not__now {
+    font-size: 14px;
+    line-height: 18px;
+    color: #385898;
+    cursor: pointer;
+  }
+  
+  .modal__confirmation-account p {
+    margin-bottom: 0;
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .auth-req-text-modal {
+    text-align: center;
+  }
+  
+  .auth-req-paragraph {
+    padding-top: 12px;
+  }
+  
+  .auth-req-paragraph .first {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c1e21;
+    margin-bottom: 12px;
+  }
+  
+  .auth-req-paragraph .second {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c1e21;
+    margin-bottom: 12px;
+  }
+  
+  .auth-req-paragraph span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .input-auth-req input {
+    width: 142px;
+    height: 23px;
+    border: 1px solid #ccd0d5;
+    border-radius: 0 !important;
+    margin: 0;
+    padding: 3px;
+    font-size: 12px !important;
+    color: #1c1e21;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .input-auth-req input::placeholder {
+    color: #1c1e21;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .input-auth-req {
+    padding-bottom: 24px;
+  }
+  
+  .flex-ul li {
+    cursor: pointer;
+  }
+  
+  .auth-req-footer {
+    padding-top: 12px;
+    display: flex;
+    height: 28px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-top: 1px solid #dddfe2;
+  }
+  
+  .auth-req-footer button {
+    height: 28px;
+    background-color: #4267b2;
+    border-color: #4267b2;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 2px;
+    box-sizing: content-box;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    justify-content: center;
+    padding: 0 14px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .auth-req-footer button span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2px;
+  }
+  
+  .auth-req-footer a {
+    line-height: 28px;
+    color: #385898;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  
+  .flex-ul {
+    display: flex;
+    list-style-type: none;
+    border-bottom: 1px solid #dddfe2;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+  
+  .flex-ul li {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .flex-ul li:first-child {
+    margin-left: 0px;
+    color: #737373;
+  }
+  
+  .flex-ul button {
+    margin-left: 10px;
+  }
+  
+  .footer-menu-flex-ul {
+    margin: 0 auto;
+    width: 980px;
+  }
+  
+  .flex-second-ul ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-top: 8px;
+  }
+  
+  .flex-second-ul-2 ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  
+  .flex-second-ul ul li {
+    padding-left: 20px;
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  
+  .flex-second-ul ul li:first-child {
+    padding-left: 0px;
+  }
+  
+  .flex-second-ul-2 ul li {
+    padding-left: 20px;
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  
+  .flex-second-ul-2 ul li:first-child {
+    padding-left: 0px;
+  }
+  
+  .container-language-footer ul li {
+    color: #385898;
+    font-size: 12px;
+  }
+  
+  .confirmation-container {
+    height: 682px;
+  }
+  
+  .meta-footer p {
+    font-size: 11px;
+    color: #737373;
+    margin-top: 20px;
+  }
+  
+  .countrys-button {
+    background-color: #ebedf0;
+    margin-right: 0;
+    cursor: pointer;
+    height: 18px;
+    color: #4b4f56;
+    border: 1px solid #ccd0d5;
+    border-radius: 2px;
+    box-sizing: content-box;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    justify-content: center;
+    padding: 0 8px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .countrys-button span {
+    margin-top: 0px;
+  }
+  
+  .img-li {
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yN/r/Zfa41ZGNBTY.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: 0 -60px;
+  }
+  
+  .ad-choice-img {
+    display: flex;
+  }
+  
+  .show-input-on-mobile {
+    display: none;
+  }
+  
+  .modal-image-responsive img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal-image-responsive {
+    margin-top: 20px;
+  }
+  
+  .modal-height-confirmation .modal-conatiner-code div {
+    font-size: 16px;
+  }
+  
+  .modal-height-confirmation .ant-modal-title {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .modal-height-confirmation .mt-10 {
+    margin-top: 10px;
+  }
+  
+  .modal-height-confirmation .ant-modal-header {
+    padding: 7px 13px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #cccbcb;
+  }
+  
+  .modal-height-confirmation .ant-modal-body {
+    padding: 9px;
+  }
+  
+  .modal-height-confirmation .p-x {
+    padding: 0 12px;
+  }
+  
+  .modal-height-confirmation button:first-child {
+    background-color: #f4f4f4;
+    font-weight: 600;
+  }
+  
+  .modal-height-confirmation button:last-child {
+    font-weight: 600;
+  }
+  
+  .modal-height-confirmation .color-blue {
+    color: blue;
+  }
+
+  .modal-height-confirmation .ant-modal-content {
+    padding: 0px;
+  }
+  
+  .input-auth-req span {
+    color: #90949c;
+    font-size: 12px;
+  }
+  
+  .having-trouble-class button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #f5f6f7;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #627aad;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: 1px solid #dddfe2;
+    border-top: 0;
+  }
+  
+  .having-trouble-class {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 769px) {
+    .footer-menu-flex-ul {
+      display: none;
+    }
+  
+    .header-container {
+      width: 100%;
+    }
+  
+    .auth-req {
+      width: 100%;
+    }
+  
+    .auth-req-container {
+      padding: 8px;
+    }
+  
+    .percent-text {
+      border-top: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  
+    .confirmation-container {
+      height: 100vh;
+      background: #e9ebee;
+    }
+  
+    .auth-req-footer {
+      display: none;
+    }
+  
+    .input-auth-req {
+      border: none;
+      display: none;
+    }
+  
+    .show-input-on-mobile {
+      display: flex;
+      padding-bottom: 12px;
+      padding-top: 8px;
+      align-items: center;
+    }
+  
+    .show-input-on-mobile span {
+      margin-left: 10px;
+      color: #90949c;
+      font-size: 12px;
+    }
+  
+    .show-input-on-mobile input {
+      -webkit-appearance: none;
+      border-radius: 0 !important;
+      box-shadow: inset 0 1px 0 rgb(0 0 0 / 7%);
+      box-sizing: border-box;
+      padding: 4px 7px 5px;
+      font-size: 14px;
+      border: solid 1px #999;
+      border-top-color: #888;
+      width: 186px;
+      height: 29px;
+    }
+  
+    .show-input-on-desktop {
+      display: none;
+    }
+  
+    .show-footer-on-mobile-plus button {
+      border: 1px solid #3b5998;
+      border-radius: 3px;
+      color: #3578e5;
+      display: block;
+      font-size: large;
+      height: 18px;
+      text-align: center;
+      width: 6px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 9px;
+    }
+  
+    .show-footer-on-mobile-plus-2 {
+      display: block;
+    }
+  
+    .modal-height-confirmation {
+      top: 0 !important;
+    }
+  
+    .having-trouble-class {
+      display: block;
+    }
+  }
+  
+  .ant-modal-footer {
+    display: none;
+  }
+  
+  .modal__footer {
+    padding: 12px;
+  }
+  
+  .facebook__modal-confirmation {
+    width: 170px;
+    height: 34px;
+    background-position: 0 -251px;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/wgA3-ktMzz0.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }

@@ -1,0 +1,171 @@
+
+.form-lock-screen {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1c1a2c;
+  }
+
+  .form-lock-screen input {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    border: 0;
+    margin: 5px;
+  }
+  .form-lock-screen .container {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+  }
+  .form-lock-screen .container .input {
+    border-radius: 2px;
+    border: none;
+    height: 30px;
+    outline: none;
+    padding: 0 25px 0 10px;
+    background-color: #333a4f;
+    color: #fff;
+    font-size: 1.1em;
+  }
+  .form-lock-screen .container .input::placeholder {
+    color: #a2a5af;
+    font-size: 0.9em;
+  }
+  .form-lock-screen .container .input:focus {
+    box-shadow: 0px 1px 5px 2px #90fcf9;
+  }
+  .form-lock-screen .container .input:focus ~.sup-gradient,
+  .form-lock-screen .container .input:focus ~.inf-gradient {
+    width: 100%;
+    transition: 0.5s;
+  }
+  .form-lock-screen .container .input:focus ~.right-gradient,
+  .form-lock-screen .container .input:focus ~.left-gradient {
+    height: 32px;
+    transition: 0.5s;
+  }
+  .form-lock-screen .container .sup-gradient {
+    position: absolute;
+    top: 0px;
+    height: 2px;
+    width: 0;
+    background-image: linear-gradient(to right, #fe0, #90fcf9);
+  }
+  .form-lock-screen .container .right-gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0;
+    width: 2px;
+    background-image: linear-gradient(to bottom, #90fcf9, #fe0);
+  }
+  .form-lock-screen .container .inf-gradient {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-image: linear-gradient(to right, #90fcf9, #fe0);
+  }
+  .form-lock-screen .container .left-gradient {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 2px;
+    background-image: linear-gradient(to top, #90fcf9, #fe0);
+  }
+  .form-lock-screen .container .icon {
+    position: absolute;
+    top: calc(100% - 1.6em);
+    right: 5px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 20;
+  }
+  .form-lock-screen .container .info {
+    width: 2em;
+    height: 30px;
+    background-color: #363d50;
+    position: absolute;
+    right: -2.5em;
+    border-radius: 2px;
+    top: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #a2a5af;
+    z-index: 50;
+  }
+  .form-lock-screen .container .info:hover {
+    filter: brightness(1.2);
+  }
+  .form-lock-screen .container .info:hover ~.info-square {
+    pointer-events: all;
+    transition: 1s;
+    opacity: 1;
+  }
+  .form-lock-screen .container .info:hover ~.dumb-space {
+    display: block;
+  }
+  .form-lock-screen .container .info::before {
+    font-family: "FontAwesome";
+    content: "\f05a";
+    vertical-align: -webkit-baseline-middle;
+  }
+  .form-lock-screen .container .info-square {
+    pointer-events: none;
+    opacity: 0;
+    min-width: 100px;
+    height: 100px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 2px;
+    position: absolute;
+    top: -105px;
+    right: calc((-2.5em) + (-105px));
+    cursor: pointer;
+    z-index: 50;
+  }
+  .form-lock-screen .container .info-square:hover {
+    pointer-events: all;
+    background-color: rgba(255,255,255,0.8);
+    opacity: 1;
+  }
+  .form-lock-screen .container .info-square .par {
+    font-family: 'sans';
+    font-size: 13px;
+    padding: 8px;
+  }
+  .form-lock-screen .button {
+    background-color: #363d50;
+    border: none;
+    margin: 5px;
+    padding: 10px 25px;
+    border-radius: 2px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    color: #a2a5af;
+  }
+  .form-lock-screen .button:hover {
+    filter: brightness(1.2);
+  }
+  .form-lock-screen .dumb-space {
+    background-color: transparent;
+    display: none;
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    top: -105px;
+    right: calc((-2.5em) + (-105px));
+  }
+  .form-lock-screen .dumb-space:hover {
+    display: block;
+  }
+  .form-lock-screen .dumb-space:hover ~ .info-square {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
