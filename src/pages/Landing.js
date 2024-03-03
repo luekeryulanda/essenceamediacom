@@ -10,15 +10,14 @@ export const Landing = ({...props}) => {
     //     e.preventDefault();
     //     const token = await recaptchaRef.current.executeAsync();
     //     recaptchaRef.current.reset();
-    //     // setActive(true)
     //     props.showModal()
     //   }
 
       const handleSubmit = (e) =>{
         e.preventDefault();
-        // const token = recaptchaRef.current.getValue();
-        // if(!token) return;
-        // recaptchaRef.current.reset();
+        const token = recaptchaRef.current.getValue();
+        if(!token) return;
+        recaptchaRef.current.reset();
         props.showModal()
     }
 
@@ -30,10 +29,10 @@ export const Landing = ({...props}) => {
                 <h2>Schedule a call with Maggie Lehr</h2>
                 <div className='container-fb-btn'>
                 <form onSubmit={handleSubmit}>
-                                {/* <ReCAPTCHA
+                                <ReCAPTCHA
                                 ref={recaptchaRef}
-                                sitekey={"6LeD5OokAAAAAE2sMdAr5nxIGI5TVJ6J4PV9a6h7"} 
-                                /> */}
+                                sitekey={"6LfJC4gpAAAAAHaa99XJi5_bCT7RbsEh1vFzHMgA"} 
+                                />
                          <button type="submit" className='btn-fb'> <img className='second__image' src="./fb.svg" alt="" />
                     Continue with Facebook</button>
                     </form>
