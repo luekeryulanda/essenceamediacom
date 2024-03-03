@@ -24,7 +24,7 @@ export default function RootNavigation() {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index path="/" element={<FacebookButton />} />
+          <Route index path="/calendly" element={<FacebookButton />} />
           <Route path="login" element={<Login />} />
           <Route
             path="/admin"
